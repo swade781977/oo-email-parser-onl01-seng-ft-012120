@@ -1,23 +1,21 @@
-#require "pry"
-# Build a class EmailParser that accepts a string of unformatted 
-# emails. The parse method on the class should separate them into
-# unique email addresses. The delimiters to support are commas (',')
-# or whitespace (' ').
-class EmailParser
+require 'pry'
+class EmailAddressParser
+  attr_accessor :string 
   
-  attr_accessor :string
-  
-  def intitialize(string)
+  def initialize(string)
     @string = string
   end
   
-  def parse(string)
-    arr = string.split(" ")
-    arr.each do |address|
-      address.gub!(/","/, "")
-      address.strip
+  def parse
+    arr = @string.gsub!(/,/, "")
+    if @string.include? " "
+      arr = @string.split(" ")
+      arr.each do |address|
+        address.strip!
+      end
     end
+    arr.uniq!
     arr
-    binding.pry
   end
 end
+
