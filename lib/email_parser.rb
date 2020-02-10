@@ -1,3 +1,4 @@
+require 'pry'
 class EmailAddressParser
   attr_accessor :string 
   
@@ -22,6 +23,7 @@ class EmailAddressParser
       end
     end
     arr
+    binding.pry
   end
 end
 
