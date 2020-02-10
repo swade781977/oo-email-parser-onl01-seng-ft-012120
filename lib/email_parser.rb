@@ -16,8 +16,8 @@ class EmailAddressParser
       arr = @string.split(" ")
       arr.each do |address|
         if address.include? ","
-          
-      end
+          address.chop!
+        end
     end
     arr
   end
