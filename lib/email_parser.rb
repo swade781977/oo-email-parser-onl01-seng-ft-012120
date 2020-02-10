@@ -8,7 +8,7 @@ class EmailAddressParser
   
   def parse
     arr = []
-    if @sring.include? ","
+    if @string.include? ","
       arr = string.split(",")
     elsif @string.include? " "
       arr = @string.split(" ")
