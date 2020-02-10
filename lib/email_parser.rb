@@ -23,7 +23,7 @@ class EmailAddressParser
       end
     end
     arr
-    binding.pry
+  
   end
 end
 
