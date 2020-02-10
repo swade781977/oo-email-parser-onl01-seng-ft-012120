@@ -12,8 +12,6 @@ class EmailAddressParser
       arr = @string.split(" ")
       arr.each do |address|
         address.strip!
-      arr
-      binding.pry
       end
     elsif @string.include? ","
       arr = string.split(",")
