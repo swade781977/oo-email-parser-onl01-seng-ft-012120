@@ -7,12 +7,7 @@ class EmailAddressParser
   
   def parse
     arr = []
-    if @string.include? ", "
-      arr = @string.split(", ")
-      arr.each do |address|
-        address.strip!
-      end
-    elsif @sring.include? ","
+    if @sring.include? ","
       arr = @string.split(",")
       arr.each do |address|
         address.strip!
