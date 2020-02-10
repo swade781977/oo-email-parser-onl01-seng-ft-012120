@@ -14,7 +14,7 @@ class EmailAddressParser
         address.strip!
       end
     elsif @string.include? " "
-      arr = @string.split(" ")
+      arr = @string.split("/\W+/")
       arr.each do |address|
         address.strip!
         if address.include? ","
