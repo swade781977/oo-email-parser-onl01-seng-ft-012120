@@ -14,8 +14,7 @@ class EmailAddressParser
         address.strip!
       end
     end
-    arr
-  
+    arr.each do
   end
 end
 
