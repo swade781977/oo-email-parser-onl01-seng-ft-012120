@@ -18,6 +18,7 @@ class EmailAddressParser
         if address.include? ","
           address.chop!
         end
+      end
     end
     arr
   end
