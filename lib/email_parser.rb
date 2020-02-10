@@ -19,7 +19,6 @@ class EmailAddressParser
         address.strip!
       arr
       binding.pry
-        end
       end
     end
     arr
