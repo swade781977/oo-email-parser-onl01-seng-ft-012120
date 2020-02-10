@@ -10,7 +10,6 @@ class EmailAddressParser
     arr = []
     if @sring.include? ","
       arr = @string.split(",")
-      end
     elsif @string.include? " "
       arr = @string.split(" ")
       arr.each do |address|
