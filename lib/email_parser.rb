@@ -4,11 +4,11 @@
 # or whitespace (' ').
 class EmailParser
   
-  attr_accessor :string
-  
   def intitialize(string)
     @string = string
   end
+  
+  attr_accessor :string
   
   def parse
     arr =[]
