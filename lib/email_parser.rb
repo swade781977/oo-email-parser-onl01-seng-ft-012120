@@ -7,7 +7,7 @@ class EmailAddressParser
   
   def parse
     arr = []
-    if @string.find
+    if @string.include? ""
   
 
 end
