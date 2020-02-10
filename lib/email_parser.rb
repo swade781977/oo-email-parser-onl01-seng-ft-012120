@@ -7,9 +7,23 @@ class EmailAddressParser
   
   def parse
     arr = []
-    if @string.include? ""
-  
-
+    if @string.include? ", "
+      arr = @string.split(", ")
+      arr.each do |address|
+        address.strip!
+      end
+    elsif @sring.include? ","
+      arr = @string.split(",")
+      arr.each do |address|
+        address.strip!
+      end
+    elsif @sring.include? " "
+      arr = @string.split(" ")
+      arr.each do |address|
+        address.strip!
+      end
+    end
+    arr
+  end
 end
 
-a = EmailParser.new("swade@yahoo.com, red@yahoo.com, blue@yahoo.com").parse
